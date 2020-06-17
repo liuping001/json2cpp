@@ -1,0 +1,106 @@
+{
+  "title": "family_region_info Management",
+  "type": "object",
+  "format": "grid",
+  "options":{
+    "disable_edit_json":false,
+    "disable_properties":false,
+    "disable_collapse":false
+  },
+  "properties": {
+    "family_region_info": {
+      "type": "array",
+      "format": "table",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "default": "1000",
+            "options": {
+              "grid_columns": 6
+            }
+          },
+          "region_ar": {
+            "type": "number",
+            "default": "1",
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_id": {
+            "type": "number",
+            "default": 10,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_tw": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_in": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_th": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_vn": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_us": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "region_tr": {
+            "type": "boolean",
+            "default": false,
+            "options": {
+              "grid_columns": 3
+            }
+          },
+          "grade1": {
+            "type": "string"
+          },
+          "grade2": {
+            "type": "string"
+          },
+          "grade3": {
+            "type": "string"
+          },
+          "grade4": {
+            "type": "string"
+          },
+          "grade5": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "json_schema": {
+      "options":{
+        "hidden":true
+      },
+      "type": "string"
+    }
+  }
+}
